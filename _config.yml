@@ -1,7 +1,14 @@
+name:           blog name
+description:    blog description
+url:            http://eemikula.github.io
+
 markdown:      kramdown
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
 textile_ext:   textile
 
 redcarpet:
   extensions: []
+
+kramdown:
+  input: GFM
 

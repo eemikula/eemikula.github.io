@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>This is a post</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/assets/css/bootstrap.css" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/feed.xml">
+<style>
+body {
+	padding-top: 60px;
+}
+</style>
+<link rel="stylesheet" href="/assets/css/syntax.css">
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+ <div class="navbar-inner">
+  <div class="container">
+   <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+   </button>
+   <a class="brand" href="/">{{ site.name }}</a>
+   <div class="nav-collapse collapse">
+	<ul class="nav">
+		<li class="active"><a href="/">Home</a></li>
+		<li><a href="/about">About</a></li>
+		<li><a href="/contact">Contact</a></li>
+	</ul>
+   </div>
+
+  </div><!--/container-fluid-->
+ </div><!--/navbar-inner-->
+</div><!--/navbar-->
+
+<div class="container">
+<h1>{{ page.title }}</h1>
+
+{{ content }}
+
+</div>
+
+</body>
+</html>
+

@@ -1,13 +1,16 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>This is a post</title>
-<link href="{{ site.url }}/assets/css/bootstrap.css" rel="stylesheet">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/assets/css/bootstrap.css" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/feed.xml">
 <style>
 body {
 	padding-top: 60px;
 }
 </style>
-<link rel="stylesheet" href="{{ site.url }}/assets/css/syntax.css">
+<link rel="stylesheet" href="/assets/css/syntax.css">
 </head>
 <body>
 <div class="navbar navbar-inverse navbar-fixed-top">
@@ -18,12 +21,12 @@ body {
 	<span class="icon-bar"></span>
 	<span class="icon-bar"></span>
    </button>
-   <a class="brand" href="{{ site.url }}/#">{{ title }}</a>
+   <a class="brand" href="/">{{ site.name }}</a>
    <div class="nav-collapse collapse">
 	<ul class="nav">
-		<li class="active"><a href="{{ site.url }}/#">Home</a></li>
-		<li><a href="{{ site.url }}/about">About</a></li>
-		<li><a href="{{ site.url }}/contact">Contact</a></li>
+		<li class="active"><a href="/">Home</a></li>
+		<li><a href="/about">About</a></li>
+		<li><a href="/contact">Contact</a></li>
 	</ul>
    </div>
 
@@ -33,9 +36,40 @@ body {
 
 <div class="container">
 <h1>{{ page.title }}</h1>
-<p>{{ content }}</p>
-</div>
+
+{{ content }}
+
+<div class="share">
+<g:plusone style="float: left" size="medium"></g:plusone>
+<script type="text/javascript">
+  window.___gcfg = {
+	lang: 'en-US'
+  };
+
+  (function() {
+	var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	po.src = 'https://apis.google.com/js/plusone.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<!--<span id="fb-root"></span>-->
+<div id="fb-root" style="float: left"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div style="padding-right: 30px; float: left" class="fb-like" data-href="{{ page.url }}" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+
+<a style="float: left" href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+</div><!--/share -->
+
+</div><!-- container -->
 
 </body>
 </html>
-
