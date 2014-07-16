@@ -1,5 +1,5 @@
-name:           blog name
-description:    blog description
+name:           eemikula.github.io
+description:    Eric Mikula's blog
 url:            http://eemikula.github.io
 
 markdown:      kramdown
