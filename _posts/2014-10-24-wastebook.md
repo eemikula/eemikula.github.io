@@ -11,4 +11,4 @@ I figured there was no need for that. I figured this was an excuse to practice m
 
 Extracting text from a PDF isn't really as nice a process as I'd like, so there's a lot to clean up, but maybe this will at least be a handy tool alongside the original PDF version.
 
-Link [here](../data/wastebook2014.html). I might clean it up a bit more when I have a chance. Feel free to do so yourself - I apologize if the copyright is questionable here, I'm just trying to make things more readable.
+Link [here](/assets/data/html/wastebook2014.html). I might clean it up a bit more when I have a chance. Feel free to do so yourself - I apologize if the copyright is questionable here, I'm just trying to make things more readable.
