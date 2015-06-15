@@ -1,4 +1,7 @@
-**Day 9:**
+---
+layout:	post
+title: Day 9
+---
 
 I went to sleep a little late last night, and therefore I was a little late getting going in the morning - I wasn't looking forward to it much because the forecast was for thunderstorms for the next couple days. It started out overcast, but not raining initially.
 
