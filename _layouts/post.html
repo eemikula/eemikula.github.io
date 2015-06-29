@@ -16,6 +16,17 @@
 </div>
 <div class="panel-body">
 {{ content }}
+
+<div>
+
+{% if page.previous.url %}
+<a style="float: left" href="{{page.previous.url}}" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"/>{{page.previous.title}}</a>
+{% endif %}
+{% if page.next.url %}
+<a style="float: right" href="{{page.next.url}}" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"/>{{page.next.title}}</a>
+{% endif %}
+</div>
+
 </div>
 
 <div class="share">

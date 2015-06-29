@@ -1,6 +1,7 @@
 name:           eemikula.github.io
 description:    Eric Mikula's blog
 url:            http://eemikula.github.io
+paginate:	10
 
 markdown:      kramdown
 markdown_ext:  markdown,mkdown,mkdn,mkd,md

@@ -9,11 +9,21 @@
 {% include navbar.html %}
 
 <div class="container">
-<h1>{{ page.title }}</h1>
 
+<div class="row">
+<div class="col-sm-9">
 {{ content }}
+</div>
+<div class="col-sm-3">
+
+<div class="panel panel-default">
+<div class="panel-heading">About Me</div>
+<div class="panel-body">{% include quickabout.html %}</div>
+</div>
 
 </div>
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="/assets/js/bootstrap.min.js"></script>
 </body>
