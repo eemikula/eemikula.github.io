@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ site.name }}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/assets/css/bootstrap.css" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/feed.xml">
+
+<link rel="stylesheet" href="/assets/css/syntax.css">
+</head>
+<body>
+<div class="navbar navbar-default" role="navigation">
+ <div class="container">
+  <div class="navbar-header">
+   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+    <span class="sr-only">Toggle navigation</span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+   </button>
+   <a class="navbar-brand" href="/">{{ site.name }}</a>
+   </div>
+   <div class="nav-collapse">
+	<ul class="nav navbar-nav">
+		<li><a href="/">Home</a></li>
+		<li class="active"><a href="/about">About</a></li>
+	</ul>
+   </div>
+ </div>
+</div><!--/navbar-->
+
+<div class="container">
+<div class="panel panel-default">
+<div class="panel-heading">{{ page.title }}</div>
+<div class="panel-body">
+{{ content }}
+</div>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+</body>
+</html>
+
